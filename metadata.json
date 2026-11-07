@@ -1,0 +1,400 @@
+[
+  {
+    "candidate_pressure": null,
+    "observation": "Two distinct shared identities form the local result even when their values are equal; remote partner identity is not required.",
+    "probe": "VP012",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "one_shared_plus_private_231": false,
+      "same_remote_231": true,
+      "source_ia": "IA1175-IA1176",
+      "split_remote_231": true
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "c55cdabf00cd844cd8b1d227fa716a424073dee6",
+      "ia": "IA1176",
+      "subject": "IA1176: remove remote-partner authority from local multiplicity"
+    },
+    "tags": [
+      "identity-multiplicity",
+      "shared-identity",
+      "coordinate-free"
+    ],
+    "title": "Equal-Value Identity Multiplicity"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "Formation origin alone does not propagate; later physical sharing of returned 230 enables a second shared 240 formation.",
+    "probe": "VP011",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "after_new_sharing_240": true,
+      "before_new_sharing_240": false,
+      "source_ia": "IA1173-IA1174"
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "c55cdabf00cd844cd8b1d227fa716a424073dee6",
+      "ia": "IA1176",
+      "subject": "IA1176: remove remote-partner authority from local multiplicity"
+    },
+    "tags": [
+      "second-formation",
+      "reentry",
+      "shared-identity",
+      "coordinate-free"
+    ],
+    "title": "Returned Sharing Cascade"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "After persistence and Current renewal, returned 230 remains readable only at the center.",
+    "probe": "VP010",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "a_reads_230": false,
+      "b_reads_230": true,
+      "c_reads_230": false,
+      "returned_230_node": 27430,
+      "source_ia": "IA1172"
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "c55cdabf00cd844cd8b1d227fa716a424073dee6",
+      "ia": "IA1176",
+      "subject": "IA1176: remove remote-partner authority from local multiplicity"
+    },
+    "tags": [
+      "returned-locality",
+      "reentry",
+      "locality",
+      "coordinate-free"
+    ],
+    "title": "Returned Locality"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "The center forms a new local result only when it jointly participates in two distinct shared identities.",
+    "probe": "VP009",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "joint_shared_formed_230": true,
+      "private_copies_formed_230": false,
+      "source_ia": "IA1171",
+      "visual_analogy": "arm-hand-sword relation intersection"
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "c55cdabf00cd844cd8b1d227fa716a424073dee6",
+      "ia": "IA1176",
+      "subject": "IA1176: remove remote-partner authority from local multiplicity"
+    },
+    "tags": [
+      "joint-participation",
+      "shared-identity",
+      "visual-analogy",
+      "coordinate-free"
+    ],
+    "title": "Joint Hinge"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "A pairwise A-B/B-C path does not substitute for literal A-C sharing.",
+    "probe": "VP008",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "direct_shared_130_formed_222": true,
+      "distinct_equal_130_formed_222": false,
+      "source_ia": "IA1167-IA1169"
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "c55cdabf00cd844cd8b1d227fa716a424073dee6",
+      "ia": "IA1176",
+      "subject": "IA1176: remove remote-partner authority from local multiplicity"
+    },
+    "tags": [
+      "shared-identity",
+      "coordinate-free",
+      "locality"
+    ],
+    "title": "Direct Shared Identity Gate"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "Thirty-seven local two-stage chains formed one asymmetric tree-like field.",
+    "probe": "VP007",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "global_combination_checks": 0,
+      "initial_formed": 37,
+      "recurrent_new_materializations": 37,
+      "score_used": false,
+      "sectors": 37,
+      "winner_used": false
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "c55cdabf00cd844cd8b1d227fa716a424073dee6",
+      "ia": "IA1176",
+      "subject": "IA1176: remove remote-partner authority from local multiplicity"
+    },
+    "tags": [
+      "tree",
+      "organic",
+      "branching",
+      "generated-chain",
+      "plural",
+      "rotation",
+      "scale",
+      "reentry",
+      "fine-render"
+    ],
+    "title": "Contact Tree"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "Twenty-four local two-stage chains formed one cathedral-like symmetric field.",
+    "probe": "VP006",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "global_combination_checks": 0,
+      "initial_formed": 24,
+      "initial_strip_only": true,
+      "recurrent_new_materializations": 24,
+      "recurrent_strip_only": true,
+      "score_used": false,
+      "sectors": 24,
+      "winner_used": false
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "c55cdabf00cd844cd8b1d227fa716a424073dee6",
+      "ia": "IA1176",
+      "subject": "IA1176: remove remote-partner authority from local multiplicity"
+    },
+    "tags": [
+      "cathedral",
+      "architecture",
+      "generated-chain",
+      "plural",
+      "rotation",
+      "scale",
+      "touching-strip",
+      "reentry",
+      "large-render"
+    ],
+    "title": "Contact Cathedral"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "Sixteen local two-stage chains formed as a symmetric multi-scale contact mandala.",
+    "probe": "VP005",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "global_combination_checks": 0,
+      "initial_formed": 16,
+      "initial_strip_only": true,
+      "recurrent_new_materializations": 16,
+      "recurrent_strip_only": true,
+      "score_used": false,
+      "sectors": 16,
+      "winner_used": false
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "c55cdabf00cd844cd8b1d227fa716a424073dee6",
+      "ia": "IA1176",
+      "subject": "IA1176: remove remote-partner authority from local multiplicity"
+    },
+    "tags": [
+      "mandala",
+      "generated-chain",
+      "plural",
+      "rotation",
+      "scale",
+      "touching-strip",
+      "reentry"
+    ],
+    "title": "Neon Contact Mandala"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "All four contact-local occurrences formed their exact children.",
+    "probe": "VP001",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "correspondence_ambiguities": 0,
+      "global_combination_checks": 0,
+      "global_current_whole_scans": 0,
+      "global_relation_scan_checks": 0,
+      "new_current_materializations": 4,
+      "provider_contact_incidence_reads": 8,
+      "score_used": false,
+      "winner_used": false
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "c55cdabf00cd844cd8b1d227fa716a424073dee6",
+      "ia": "IA1176",
+      "subject": "IA1176: remove remote-partner authority from local multiplicity"
+    },
+    "tags": [
+      "contact",
+      "plural",
+      "transform",
+      "scale",
+      "value",
+      "distal-geometry"
+    ],
+    "title": "Four Contact Blooms"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "Eight independent occurrences at scales 1\u20138 formed together without a scale winner.",
+    "probe": "VP002",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "correspondence_ambiguities": 0,
+      "global_combination_checks": 0,
+      "new_current_materializations": 8,
+      "provider_boundary_strip_only_used": true,
+      "score_used": false,
+      "winner_used": false
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "c55cdabf00cd844cd8b1d227fa716a424073dee6",
+      "ia": "IA1176",
+      "subject": "IA1176: remove remote-partner authority from local multiplicity"
+    },
+    "tags": [
+      "scale",
+      "plural",
+      "rotation",
+      "touching-strip",
+      "zoo"
+    ],
+    "title": "Scale Zoo"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "Four rotated districts each completed an initial generation and a second generated step.",
+    "probe": "VP003",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "global_combination_checks": 0,
+      "initial_formed": 4,
+      "initial_strip_only": true,
+      "recurrent_new_materializations": 4,
+      "recurrent_strip_only": true,
+      "score_used": false,
+      "winner_used": false
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "c55cdabf00cd844cd8b1d227fa716a424073dee6",
+      "ia": "IA1176",
+      "subject": "IA1176: remove remote-partner authority from local multiplicity"
+    },
+    "tags": [
+      "generated-chain",
+      "four-directions",
+      "rotation",
+      "touching-strip",
+      "reentry"
+    ],
+    "title": "Four-Direction Chain City"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "Eleven blooms formed while the single broken touching strip stayed dark; neighbors were unaffected.",
+    "probe": "VP004",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "broken_index": 7,
+      "broken_stayed_dark": true,
+      "correspondence_ambiguities": 0,
+      "expected_live_blooms": 11,
+      "global_combination_checks": 0,
+      "new_current_materializations": 11,
+      "score_used": false,
+      "winner_used": false
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "c55cdabf00cd844cd8b1d227fa716a424073dee6",
+      "ia": "IA1176",
+      "subject": "IA1176: remove remote-partner authority from local multiplicity"
+    },
+    "tags": [
+      "locality",
+      "destructive-control",
+      "contact",
+      "plural",
+      "garden"
+    ],
+    "title": "Broken Contact Garden"
+  }
+]
