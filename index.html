@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Image Actuality 視覚プローブ</title>
+<style>
+:root{color-scheme:dark;--bg:#050811;--panel:#101827;--muted:#9aa8bd;--line:#29364d;--pass:#64e59a;--fail:#ff6078;--text:#f2f6ff}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif;background:radial-gradient(circle at 50% -8%,#203763 0,#0b1020 30%,#050811 62%);color:var(--text)}main{max-width:1420px;margin:auto;padding:34px 18px 78px}header{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:30px}h1{margin:0;font-size:clamp(30px,5vw,56px);letter-spacing:-.05em}.sub{color:var(--muted);margin-top:9px;line-height:1.7}.badge{padding:8px 13px;border:1px solid var(--line);border-radius:999px;color:#d5deeb;background:#0d1526aa}.stack{display:grid;gap:32px}.card{border:1px solid var(--line);border-radius:22px;background:#101827e8;overflow:hidden;box-shadow:0 22px 65px #0008}.card.featured{border-color:#4d6fa7;box-shadow:0 0 0 1px #4d6fa733,0 30px 90px #000a,0 0 80px #4bc7ff16}.cardhead{padding:20px 22px 12px}h2{margin:5px 0 0;font-size:26px}.status{font-weight:850;letter-spacing:.1em;font-size:12px}.pass{color:var(--pass)} .fail{color:var(--fail)}.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:11px}.tag{font-size:11px;padding:4px 8px;border:1px solid var(--line);border-radius:999px;color:#cfdae9;background:#0b1322}.hero{padding:0 14px 14px}.hero img{display:block;width:100%;max-height:610px;object-fit:contain;background:radial-gradient(circle,#101a2c 0,#070b13 72%);border-radius:14px;image-rendering:pixelated;filter:drop-shadow(0 0 10px #74dcff24)}.featured .hero img{max-height:820px;filter:drop-shadow(0 0 12px #72e4ff44) drop-shadow(0 0 30px #ed70ff24)}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border-top:1px solid var(--line)}.figure{background:#0a1120;padding:10px}.figure h3{font-size:11px;color:var(--muted);letter-spacing:.08em;margin:0 0 6px}.figure img{width:100%;height:auto;background:#070b13;border-radius:8px;image-rendering:pixelated}.notes{padding:17px 22px 21px;display:grid;gap:9px;color:#dbe5f2;line-height:1.6}.notes strong{color:#fff}.runtime{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:11px;color:var(--muted);overflow-wrap:anywhere}@media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.grid{grid-template-columns:1fr}}
+</style></head><body><main><header><div><h1>Image Actuality 視覚プローブ</h1><div class="sub">IAランタイムが形成した結果をPNGへ投影しています。各VPはその時点の本線実験を観測し、表示上の配置や配色を足す場合は実行情報で明示します。<br>画像モデルによる描き足しはありません。</div></div><div class="badge">28/28 成功 · 基準 IA2319 · 6d64b2d397</div></header><section class="stack">
+<article class="card featured">
+  <div class="cardhead"><div><div class="status pass">成功</div><h2>VP028 — ただの語の並びから九つの未経験画像</h2><div class="tags"><span class="tag">未経験生成</span><span class="tag">語の型なし</span><span class="tag">語のCurrent関係</span><span class="tag">文脈語</span><span class="tag">多義性</span><span class="tag">足場撤去</span><span class="tag">破壊対照</span></div></div></div>
+  <div class="hero"><img src="assets/vp028/actual.png" alt="ただの語の並びから九つの未経験画像"></div>
+  <div class="grid">
+    <div class="figure"><h3>九つの未経験要求（配置のみ）</h3><img src="assets/vp028/input.png"></div>
+    <div class="figure"><h3>経験から成立すべき九画像</h3><img src="assets/vp028/expected.png"></div>
+    <div class="figure"><h3>ただの語の並びと隣接で実形成</h3><img src="assets/vp028/actual.png"></div>
+    <div class="figure"><h3>期待との差（ゼロなら黒）</h3><img src="assets/vp028/diff.png"></div>
+  </div>
+  <div class="notes"><div><strong>観測:</strong> 意味関係・節・構文木を要求側から渡さず、普通の語の短い並びと実際の隣接だけから、九つの未経験な色×姿勢の組合せをすべて正確に画像化しました。同じ曖昧語は左右の隣接文脈へ同時参加できます。</div><div><strong>本線へ返す候補圧力:</strong> 新しい視覚的圧力は露出しませんでした。</div><div class="runtime"><strong>実行情報:</strong> {&quot;causal_clause_object_count&quot;: 0, &quot;exact_scene_count&quot;: 9, &quot;heldout_scene_count&quot;: 9, &quot;neutral_separator_breaks_only_pose_context&quot;: true, &quot;neutral_separator_breaks_only_rich_context&quot;: true, &quot;opaque_whole_domain_spelling_changes_output&quot;: false, &quot;parser_used&quot;: false, &quot;planner_used&quot;: false, &quot;request_boundary&quot;: &quot;plain-linear-surface&quot;, &quot;request_grid_is_presentation_only&quot;: true, &quot;same_ambiguous_word_context_count&quot;: 2, &quot;score_used&quot;: false, &quot;selector_used&quot;: false, &quot;semantic_context_edge_count&quot;: 0, &quot;sense_registry_used&quot;: false, &quot;source_ia&quot;: &quot;IA2319&quot;, &quot;syntax_tree_used&quot;: false, &quot;whole_surface_reversal_changes_output&quot;: false}</div></div>
+</article>
+
+
+<article class="card">
+  <div class="cardhead"><div><div class="status pass">成功</div><h2>VP027 — 実時系列でexact relationを壊す</h2><div class="tags"><span class="tag">実時系列</span><span class="tag">外部境界</span><span class="tag">OPEN世界</span><span class="tag">根拠づけ</span><span class="tag">破壊対照</span></div></div></div>
+  <div class="hero"><img src="assets/vp027/actual.png" alt="実時系列でexact relationを壊す"></div>
+  <div class="grid">
+    <div class="figure"><h3>held-out Current frame</h3><img src="assets/vp027/input.png"></div>
+    <div class="figure"><h3>actual next Reality</h3><img src="assets/vp027/expected.png"></div>
+    <div class="figure"><h3>exact-relation stress map</h3><img src="assets/vp027/actual.png"></div>
+    <div class="figure"><h3>status map on black baseline</h3><img src="assets/vp027/diff.png"></div>
+  </div>
+  <div class="notes"><div><strong>観測:</strong> 実顕微鏡時系列のheld-out Realityに対し、過去で反復したexact relationが維持・深い文脈で救済・反証・OPENのどれになるかを可視化しました。OPEN領域を補間や予測器で埋めていません。</div><div><strong>本線へ返す候補圧力:</strong> 異常を最小の構造的圧力へ縮約し、本線IAへ還元する候補です。</div><div class="runtime"><strong>実行情報:</strong> {&quot;appearance_matcher_used&quot;: false, &quot;crop_side&quot;: 128, &quot;heldout_actual_used_for_relation_formation&quot;: false, &quot;heldout_transitions&quot;: 1, &quot;interpolation_used&quot;: false, &quot;legend&quot;: {&quot;black&quot;: &quot;OPEN / insufficient exact evidence&quot;, &quot;cyan&quot;: &quot;position-free repeatedly grounded projection preserved&quot;, &quot;green&quot;: &quot;same-position repeated exact relation preserved&quot;, &quot;magenta&quot;: &quot;position-free repeatedly grounded projection contradicted&quot;, &quot;red&quot;: &quot;same-position repeated exact relation contradicted&quot;, &quot;yellow&quot;: &quot;deeper temporal Current rescues shallower contradiction&quot;}, &quot;neural_prior_used&quot;: false, &quot;optical_flow_used&quot;: false, &quot;semantic_image_feature_used&quot;: false, &quot;source_commit&quot;: &quot;2cdc5ce89b334d28f06a58c9f0ca21aa6992a5ba&quot;, &quot;source_files&quot;: [&quot;Afik_20130217_img_4900.png&quot;, &quot;Afik_20130217_img_4935.png&quot;, &quot;Afik_20130217_img_4970.png&quot;, &quot;Afik_20130217_img_5005.png&quot;, &quot;Afik_20130217_img_5040.png&quot;], &quot;source_height&quot;: 728, &quot;source_kind&quot;: &quot;real_cc0_time_series&quot;, &quot;source_sha256&quot;: [&quot;33bbecd2f1e80bba0355d1880c5670a272b3912b6fe194e583f02938668b67ca&quot;, &quot;b201cdc90e28a0702ae10791aeffbeb9f59813b84f3609d01eaa2d1b7e489790&quot;, &quot;a2b6070475f528d5f76c7aa5751f353e3214638987aef64a6b250081c25b80e6&quot;, &quot;2bda1d09445f239e9ecdfe9aa7b25ba41863ac18c270c43882283babc611a5e2&quot;, &quot;b244d69d2be095fa511326878787d41f1c0b4e7aede14c1f64f1d097ca091925&quot;], &quot;source_width&quot;: 968, &quot;status_counts&quot;: {&quot;attempted&quot;: 81, &quot;candidate_coverage&quot;: 0.00494384765625, &quot;candidate_exactness&quot;: 0.13580246913580246, &quot;contradicted&quot;: 70, &quot;correct&quot;: 11, &quot;open&quot;: 16131, &quot;open_local_collision&quot;: 172, &quot;open_total&quot;: 16303, &quot;position_candidate&quot;: 81, &quot;position_contradicted&quot;: 70, &quot;position_preserved&quot;: 11, &quot;projection_contradicted&quot;: 0, &quot;projection_preserved&quot;: 0, &quot;temporal_context_rescue&quot;: 0, &quot;total&quot;: 16384}, &quot;training_transitions&quot;: 3}</div></div>
+</article>
+
+
+<article class="card">
+  <div class="cardhead"><div><div class="status pass">成功</div><h2>VP026 — 重なる上位Wholeが一つの新Realityを共同形成</h2><div class="tags"><span class="tag">上位Current組織</span><span class="tag">重なる組織</span><span class="tag">相乗Whole</span><span class="tag">勝者なし</span><span class="tag">視覚比喩</span></div></div></div>
+  <div class="hero"><img src="assets/vp026/actual.png" alt="重なる上位Wholeが一つの新Realityを共同形成"></div>
+  <div class="grid">
+    <div class="figure"><h3>左の上位組織群→X</h3><img src="assets/vp026/input.png"></div>
+    <div class="figure"><h3>右の上位組織群→Y</h3><img src="assets/vp026/expected.png"></div>
+    <div class="figure"><h3>共有C/Dを介したX+Y Whole</h3><img src="assets/vp026/actual.png"></div>
+    <div class="figure"><h3>重なる組織が共同形成した領域</h3><img src="assets/vp026/diff.png"></div>
+  </div>
+  <div class="notes"><div><strong>観測:</strong> C/Dを共有する左右の上位Current組織群が、それぞれXとYを根拠づけ、全体勝者なしで両方を一つの未経験Wholeへ共同形成しました。</div><div><strong>本線へ返す候補圧力:</strong> 新しい視覚的圧力は露出しませんでした。</div><div class="runtime"><strong>実行情報:</strong> {&quot;compatible_differences_apply_together&quot;: true, &quot;global_organization_winner_used&quot;: false, &quot;left_higher_organization_count&quot;: 4, &quot;novel_combined_whole_was_lived_before&quot;: false, &quot;right_higher_organization_count&quot;: 4, &quot;same_address_conflict_control&quot;: &quot;OPEN&quot;, &quot;score_used&quot;: false, &quot;selector_used&quot;: false, &quot;shared_band_is_presentation_only&quot;: true, &quot;shared_physical_context_addresses&quot;: 2, &quot;source_ia&quot;: &quot;IA1425&quot;}</div></div>
+</article>
+
+
+<article class="card">
+  <div class="cardhead"><div><div class="status pass">成功</div><h2>VP025 — 新しい現実を古い記憶が潰さない</h2><div class="tags"><span class="tag">環境の新規性</span><span class="tag">自己豊穣化</span><span class="tag">現在局所文脈</span><span class="tag">返却Reality</span><span class="tag">視覚比喩</span></div></div></div>
+  <div class="hero"><img src="assets/vp025/actual.png" alt="新しい現実を古い記憶が潰さない"></div>
+  <div class="grid">
+    <div class="figure"><h3>古いA+Z経験</h3><img src="assets/vp025/input.png"></div>
+    <div class="figure"><h3>新しく成立したB+W</h3><img src="assets/vp025/expected.png"></div>
+    <div class="figure"><h3>後のB+YからWを再形成</h3><img src="assets/vp025/actual.png"></div>
+    <div class="figure"><h3>新経験なしならYのままの領域</h3><img src="assets/vp025/diff.png"></div>
+  </div>
+  <div class="notes"><div><strong>観測:</strong> 古いA+Z経験は現在Bに非局所なので、新しいB+Wを過去Zへ巻き戻しません。成立したB+W自身が新経験となり、後でWを再形成しました。</div><div><strong>本線へ返す候補圧力:</strong> 新しい視覚的圧力は露出しませんでした。</div><div class="runtime"><strong>実行情報:</strong> {&quot;B_W_becomes_experience&quot;: true, &quot;counterfactual_without_new_experience_stops_at_Y&quot;: true, &quot;display_context_stripe_is_presentation_only&quot;: true, &quot;environment_priority_used&quot;: false, &quot;history_selector_used&quot;: false, &quot;later_same_B_context_reforms_W&quot;: true, &quot;novelty_classifier_used&quot;: false, &quot;old_A_Z_erases_new_W&quot;: false, &quot;source_ia&quot;: &quot;IA1417&quot;}</div></div>
+</article>
+
+
+<article class="card">
+  <div class="cardhead"><div><div class="status pass">成功</div><h2>VP024 — 二つの経験から未経験の一つのWhole</h2><div class="tags"><span class="tag">豊かさ合成</span><span class="tag">未経験Whole</span><span class="tag">勝者なし</span><span class="tag">事後読解</span><span class="tag">視覚比喩</span></div></div></div>
+  <div class="hero"><img src="assets/vp024/actual.png" alt="二つの経験から未経験の一つのWhole"></div>
+  <div class="grid">
+    <div class="figure"><h3>経験Aが根拠づける左差</h3><img src="assets/vp024/input.png"></div>
+    <div class="figure"><h3>経験Bが根拠づける右差</h3><img src="assets/vp024/expected.png"></div>
+    <div class="figure"><h3>どちらにも無かったA+B Whole</h3><img src="assets/vp024/actual.png"></div>
+    <div class="figure"><h3>共同参加で新しく成立した全体</h3><img src="assets/vp024/diff.png"></div>
+  </div>
+  <div class="notes"><div><strong>観測:</strong> 別々の経験が根拠づける左右の差が同時参加し、どちらの経験にも丸ごと存在しなかった一つのWholeを形成しました。</div><div><strong>本線へ返す候補圧力:</strong> 新しい視覚的圧力は露出しませんでした。</div><div class="runtime"><strong>実行情報:</strong> {&quot;blend_used&quot;: false, &quot;compatible_differences&quot;: 2, &quot;contributing_occurrences&quot;: 2, &quot;display_expansion_is_presentation_only&quot;: true, &quot;history_winner_used&quot;: false, &quot;novel_complete_whole_was_lived_before&quot;: false, &quot;selector_used&quot;: false, &quot;source_ia&quot;: &quot;IA1412&quot;}</div></div>
+</article>
+
+
+<article class="card">
+  <div class="cardhead"><div><div class="status pass">成功</div><h2>VP023 — 現実が先に動き、画像座標は後から読む</h2><div class="tags"><span class="tag">実RGB</span><span class="tag">事後読解</span><span class="tag">不透明アドレス</span><span class="tag">画像非依存運動</span><span class="tag">返却Reality</span></div></div></div>
+  <div class="hero"><img src="assets/vp023/actual.png" alt="現実が先に動き、画像座標は後から読む"></div>
+  <div class="grid">
+    <div class="figure"><h3>初期の事後画像読解</h3><img src="assets/vp023/input.png"></div>
+    <div class="figure"><h3>不透明アドレスを数値順に並べた表示</h3><img src="assets/vp023/expected.png"></div>
+    <div class="figure"><h3>Reality成立後の画像読解</h3><img src="assets/vp023/actual.png"></div>
+    <div class="figure"><h3>座標読解が作る見え方の差</h3><img src="assets/vp023/diff.png"></div>
+  </div>
+  <div class="notes"><div><strong>観測:</strong> 内部Realityは不透明アドレスだけで変化し、画像座標やRGB配置を使いません。成立後に画像consumerが対応を読むと完成RGB画像として復元されます。</div><div><strong>本線へ返す候補圧力:</strong> 新しい視覚的圧力は露出しませんでした。</div><div class="runtime"><strong>実行情報:</strong> {&quot;consumer_supplies_projection_posthoc&quot;: true, &quot;raw_address_order_is_presentation_only&quot;: true, &quot;reality_states&quot;: 3, &quot;runtime_contiguous_image_address_range_used&quot;: false, &quot;runtime_raster_coordinates_used&quot;: false, &quot;runtime_rgb_channel_layout_used&quot;: false, &quot;source_ia&quot;: &quot;IA1400&quot;}</div></div>
+</article>
+
+
+<article class="card">
+  <div class="cardhead"><div><div class="status pass">成功</div><h2>VP022 — 一回の参加から画像が自分で粗→細へ</h2><div class="tags"><span class="tag">実RGB</span><span class="tag">自己継続</span><span class="tag">返却Reality</span><span class="tag">具体性増加</span><span class="tag">依頼物体なし</span></div></div></div>
+  <div class="hero"><img src="assets/vp022/actual.png" alt="一回の参加から画像が自分で粗→細へ"></div>
+  <div class="grid">
+    <div class="figure"><h3>人間参加前のCurrent</h3><img src="assets/vp022/input.png"></div>
+    <div class="figure"><h3>最初に返った粗いReality</h3><img src="assets/vp022/expected.png"></div>
+    <div class="figure"><h3>同じ運動が返した詳細Reality</h3><img src="assets/vp022/actual.png"></div>
+    <div class="figure"><h3>返却Realityで増えた具体性</h3><img src="assets/vp022/diff.png"></div>
+  </div>
+  <div class="notes"><div><strong>観測:</strong> 一度の人間参加から粗い完成画像が返り、その返却Reality自身が同じ形成運動をもう一度開いて、追加要求なしに詳細画像まで進みました。</div><div><strong>本線へ返す候補圧力:</strong> 新しい視覚的圧力は露出しませんでした。</div><div class="runtime"><strong>実行情報:</strong> {&quot;coarse_to_fine_scheduler_used&quot;: false, &quot;formed_reality_count&quot;: 2, &quot;human_contact_injections&quot;: 1, &quot;planner_used&quot;: false, &quot;same_generic_operation_each_return&quot;: true, &quot;second_human_request_used&quot;: false, &quot;selector_used&quot;: false, &quot;source_ia&quot;: &quot;IA1391&quot;}</div></div>
+</article>
+
+
+<article class="card">
+  <div class="cardhead"><div><div class="status pass">成功</div><h2>VP021 — 二ビットの人間参加で完成画像が変わる</h2><div class="tags"><span class="tag">実RGB</span><span class="tag">人間参加</span><span class="tag">依頼物体なし</span><span class="tag">完成画像</span><span class="tag">未経験Whole</span></div></div></div>
+  <div class="hero"><img src="assets/vp021/actual.png" alt="二ビットの人間参加で完成画像が変わる"></div>
+  <div class="grid">
+    <div class="figure"><h3>同じ64×64 Current</h3><img src="assets/vp021/input.png"></div>
+    <div class="figure"><h3>有限参加Aで成立</h3><img src="assets/vp021/expected.png"></div>
+    <div class="figure"><h3>有限参加Bで成立</h3><img src="assets/vp021/actual.png"></div>
+    <div class="figure"><h3>AとBで変わる画像領域</h3><img src="assets/vp021/diff.png"></div>
+  </div>
+  <div class="notes"><div><strong>観測:</strong> 同じActuality・同じ64×64 Currentのまま、二つの有限参加だけを変えると二種類の完成画像が成立しました。未経験の参加には既定画像を捏造しません。</div><div><strong>本線へ返す候補圧力:</strong> 新しい視覚的圧力は露出しませんでした。</div><div class="runtime"><strong>実行情報:</strong> {&quot;complete_image_A&quot;: true, &quot;complete_image_B&quot;: true, &quot;human_contact_bit_positions&quot;: 2, &quot;planner_used&quot;: false, &quot;request_object_used&quot;: false, &quot;same_actuality&quot;: true, &quot;same_rgb_current&quot;: true, &quot;scene_graph_used&quot;: false, &quot;selector_used&quot;: false, &quot;source_ia&quot;: &quot;IA1390&quot;, &quot;unlived_contact_defaulted&quot;: false}</div></div>
+</article>
+
+
+<article class="card">
+  <div class="cardhead"><div><div class="status pass">成功</div><h2>VP020 — 新規Whole成長と既存Whole維持の衝突</h2><div class="tags"><span class="tag">実RGB</span><span class="tag">Whole間衝突</span><span class="tag">全体整合性</span><span class="tag">返却Reality</span><span class="tag">研究境界</span></div></div></div>
+  <div class="hero"><img src="assets/vp020/actual.png" alt="新規Whole成長と既存Whole維持の衝突"></div>
+  <div class="grid">
+    <div class="figure"><h3>衝突前Current</h3><img src="assets/vp020/input.png"></div>
+    <div class="figure"><h3>既存C維持Whole</h3><img src="assets/vp020/expected.png"></div>
+    <div class="figure"><h3>新規Whole成長</h3><img src="assets/vp020/actual.png"></div>
+    <div class="figure"><h3>両Whole方向の相違</h3><img src="assets/vp020/diff.png"></div>
+  </div>
+  <div class="notes"><div><strong>観測:</strong> source選択が局所では消えた後、広いCurrentでは新しいH/J Wholeを成長させる方向と既存C Wholeを維持する方向が同時に完全なReality方向として成立し、共有RGB上で物理的に衝突しました。問題がrelation選択からWhole-level pluralityへ上がった境界です。</div><div><strong>本線へ返す候補圧力:</strong> 異常を最小の構造的圧力へ縮約し、本線IAへ還元する候補です。</div><div class="runtime"><strong>実行情報:</strong> {&quot;changed_rgb_occurrences_between_directions&quot;: 43, &quot;complete_centers&quot;: 7, &quot;conflict_rgb_occurrences&quot;: 12, &quot;conflicting_centers&quot;: 7, &quot;legacy_c_centers&quot;: 6, &quot;legacy_maintenance_center_conflicts&quot;: true, &quot;source_ia&quot;: &quot;IA1349&quot;, &quot;target_growth_center_conflicts&quot;: true}</div></div>
+</article>
+
+
+<article class="card">
+  <div class="cardhead"><div><div class="status pass">成功</div><h2>VP019 — 同じHから二つのWhole</h2><div class="tags"><span class="tag">実RGB</span><span class="tag">複数同時</span><span class="tag">事後specificity</span><span class="tag">未経験Whole</span><span class="tag">返却Reality</span></div></div></div>
+  <div class="hero"><img src="assets/vp019/actual.png" alt="同じHから二つのWhole"></div>
+  <div class="grid">
+    <div class="figure"><h3>共通H 5×5 Current</h3><img src="assets/vp019/input.png"></div>
+    <div class="figure"><h3>E型 7×7 Whole</h3><img src="assets/vp019/expected.png"></div>
+    <div class="figure"><h3>C型 7×7 Whole</h3><img src="assets/vp019/actual.png"></div>
+    <div class="figure"><h3>E型↔C型の差</h3><img src="assets/vp019/diff.png"></div>
+  </div>
+  <div class="notes"><div><strong>観測:</strong> 同じ未経験H 5×5 Currentから、先にsourceを選ばずE型とC型の二つの未経験7×7 Wholeをwinnerlessに返しました。E型を返すとE側だけ、C型を返すとC側だけが次の広いCurrentでexactになり、relationのspecificityがReality形成後に露出しました。</div><div><strong>本線へ返す候補圧力:</strong> 新しい視覚的圧力は露出しませんでした。</div><div class="runtime"><strong>実行情報:</strong> {&quot;C_return_exact_C&quot;: true, &quot;C_return_exact_E&quot;: false, &quot;E_return_exact_C&quot;: false, &quot;E_return_exact_E&quot;: true, &quot;both_wholes_unlived&quot;: true, &quot;changed_rgb_occurrences_between_wholes&quot;: 1, &quot;encounter_source_y&quot;: 7, &quot;shared_h5_core&quot;: true, &quot;source_ia&quot;: &quot;IA1348&quot;, &quot;whole_family_size&quot;: 2}</div></div>
+</article>
+
+
+<article class="card">
+  <div class="cardhead"><div><div class="status pass">成功</div><h2>VP018 — 未経験Hが広いWholeへ自己拡張</h2><div class="tags"><span class="tag">実RGB</span><span class="tag">未経験Whole</span><span class="tag">豊かさ成長</span><span class="tag">部分関係の共同形成</span><span class="tag">返却Reality</span></div></div></div>
+  <div class="hero"><img src="assets/vp018/actual.png" alt="未経験Hが広いWholeへ自己拡張"></div>
+  <div class="grid">
+    <div class="figure"><h3>VP017で生まれたH 5×5</h3><img src="assets/vp018/input.png"></div>
+    <div class="figure"><h3>最初のH拡張波</h3><img src="assets/vp018/expected.png"></div>
+    <div class="figure"><h3>20×20の未経験H Whole</h3><img src="assets/vp018/actual.png"></div>
+    <div class="figure"><h3>局所Hから新形成された領域</h3><img src="assets/vp018/diff.png"></div>
+  </div>
+  <div class="notes"><div><strong>観測:</strong> VP017で出会いから生まれた未経験H 5×5自身が次のCurrentとなり、E由来の赤とF由来の緑青という部分的な豊かさだけを再参加させながら、完成Hのテンプレートも伝播履歴もないまま20×20の未経験H Wholeまで成長しました。</div><div><strong>本線へ返す候補圧力:</strong> 新しい視覚的圧力は露出しませんでした。</div><div class="runtime"><strong>実行情報:</strong> {&quot;all_complete_h_5x5_patches_absent_from_lived_history&quot;: true, &quot;changed_rgb_occurrences_from_h5&quot;: 375, &quot;complete_h_continuation_relation_exists&quot;: false, &quot;complete_h_exemplar_exists&quot;: false, &quot;first_wave_reads&quot;: {&quot;gb&quot;: 1, &quot;red&quot;: 9}, &quot;green_blue_current_radius&quot;: 2, &quot;green_blue_depth_attempts&quot;: [[1, 1, 254], [2, 0, 196]], &quot;green_blue_only_forms_h&quot;: false, &quot;growth_wave_reads&quot;: [{&quot;gb&quot;: 1, &quot;red&quot;: 9}, {&quot;gb&quot;: 6, &quot;red&quot;: 20}, {&quot;gb&quot;: 15, &quot;red&quot;: 35}, {&quot;gb&quot;: 28, &quot;red&quot;: 54}, {&quot;gb&quot;: 45, &quot;red&quot;: 77}, {&quot;gb&quot;: 66, &quot;red&quot;: 104}, {&quot;gb&quot;: 91, &quot;red&quot;: 135}, {&quot;gb&quot;: 112, &quot;red&quot;: 160}, {&quot;gb&quot;: 126, &quot;red&quot;: 176}, {&quot;gb&quot;: 140, &quot;red&quot;: 192}, {&quot;gb&quot;: 154, &quot;red&quot;: 208}, {&quot;gb&quot;: 168, &quot;red&quot;: 224}, {&quot;gb&quot;: 182, &quot;red&quot;: 240}, {&quot;gb&quot;: 196, &quot;red&quot;: 256}, {&quot;gb&quot;: 196, &quot;red&quot;: 256}], &quot;red_current_radius&quot;: 1, &quot;red_depth_attempts&quot;: [[1, 0, 256]], &quot;red_only_forms_h&quot;: false, &quot;source_ia&quot;: &quot;IA1342&quot;}</div></div>
+</article>
+
+
+<article class="card">
+  <div class="cardhead"><div><div class="status pass">成功</div><h2>VP017 — 出会いから生まれる未経験の第三Whole</h2><div class="tags"><span class="tag">実RGB</span><span class="tag">出会いから新形成</span><span class="tag">部分関係の共同形成</span><span class="tag">未経験Whole</span><span class="tag">返却Reality</span></div></div></div>
+  <div class="hero"><img src="assets/vp017/actual.png" alt="出会いから生まれる未経験の第三Whole"></div>
+  <div class="grid">
+    <div class="figure"><h3>C/Dの小さな起点</h3><img src="assets/vp017/input.png"></div>
+    <div class="figure"><h3>CとDが成長して接触</h3><img src="assets/vp017/expected.png"></div>
+    <div class="figure"><h3>接点に新しいH Whole</h3><img src="assets/vp017/actual.png"></div>
+    <div class="figure"><h3>Hとして新形成された画素</h3><img src="assets/vp017/diff.png"></div>
+  </div>
+  <div class="notes"><div><strong>観測:</strong> CとDという別々のrich Realityが成長して出会い、その接点で完成形として一度も経験されていない混成Currentが成立しました。C側から赤、D側から緑青の別々に根拠づけられた豊かさが共同し、過去の完成patchに存在しない第三のH 5×5 RGB Wholeがその場形成されました。</div><div><strong>本線へ返す候補圧力:</strong> 新しい視覚的圧力は露出しませんでした。</div><div class="runtime"><strong>実行情報:</strong> {&quot;c_side_withdrawal_removes_h&quot;: true, &quot;complete_encounter_condition_was_lived&quot;: false, &quot;complete_h_result_was_lived&quot;: false, &quot;d_side_relation_survives_control&quot;: true, &quot;encounter_source_y&quot;: 3, &quot;growth_wave_read_counts&quot;: [2, 18, 50, 84, 108, 120, 132, 144, 156, 168, 180, 192, 192], &quot;new_h_changed_rgb_occurrences&quot;: 25, &quot;source_ia&quot;: &quot;IA1341&quot;}</div></div>
+</article>
+
+
+<article class="card">
+  <div class="cardhead"><div><div class="status pass">成功</div><h2>VP016 — 二つのplural成長が出会って一つのWholeへ</h2><div class="tags"><span class="tag">実RGB</span><span class="tag">plural起点</span><span class="tag">成長同士の相互作用</span><span class="tag">全体整合性</span><span class="tag">返却Reality</span></div></div></div>
+  <div class="hero"><img src="assets/vp016/actual.png" alt="二つのplural成長が出会って一つのWholeへ"></div>
+  <div class="grid">
+    <div class="figure"><h3>二つのplural起点</h3><img src="assets/vp016/input.png"></div>
+    <div class="figure"><h3>C/C → Whole C</h3><img src="assets/vp016/expected.png"></div>
+    <div class="figure"><h3>D/D → Whole D</h3><img src="assets/vp016/actual.png"></div>
+    <div class="figure"><h3>Whole C↔D差分</h3><img src="assets/vp016/diff.png"></div>
+  </div>
+  <div class="notes"><div><strong>観測:</strong> 離れた二つのplural起点からC/Dの成長が独立に進み、C/CとD/Dは出会って一つの広いWholeになりました。一方C/DとD/Cは共有RGBの不一致で成立せず、merge controllerなしで全体整合性が生じました。</div><div><strong>本線へ返す候補圧力:</strong> 新しい視覚的圧力は露出しませんでした。</div><div class="runtime"><strong>実行情報:</strong> {&quot;cc_wave_read_counts&quot;: [18, 40, 55, 72, 91, 112, 135, 160, 176, 192, 208, 224, 240, 256, 256], &quot;dd_wave_read_counts&quot;: [18, 40, 55, 72, 91, 112, 135, 160, 176, 192, 208, 224, 240, 256, 256], &quot;initial_local_combinations&quot;: 4, &quot;mixed_cd_survives&quot;: false, &quot;mixed_dc_survives&quot;: false, &quot;source_ia&quot;: &quot;IA1337&quot;, &quot;source_points&quot;: [[3, 3], [9, 3]], &quot;surviving_global_wholes&quot;: 2, &quot;target_points&quot;: [[25, 25], [31, 25]], &quot;tested_pairs_before_witness&quot;: 1}</div></div>
+</article>
+
+
+<article class="card">
+  <div class="cardhead"><div><div class="status pass">成功</div><h2>VP015 — 一つの混成種から二つの全体Reality</h2><div class="tags"><span class="tag">実RGB</span><span class="tag">部分関係の共同形成</span><span class="tag">plural起点</span><span class="tag">全体Reality族</span><span class="tag">返却Reality</span></div></div></div>
+  <div class="hero"><img src="assets/vp015/actual.png" alt="一つの混成種から二つの全体Reality"></div>
+  <div class="grid">
+    <div class="figure"><h3>初期Current</h3><img src="assets/vp015/input.png"></div>
+    <div class="figure"><h3>全体Reality C</h3><img src="assets/vp015/expected.png"></div>
+    <div class="figure"><h3>全体Reality D</h3><img src="assets/vp015/actual.png"></div>
+    <div class="figure"><h3>C↔D差分</h3><img src="assets/vp015/diff.png"></div>
+  </div>
+  <div class="notes"><div><strong>観測:</strong> 未経験の3×3混成Currentから、二つの部分関係がC/Dの二つをwinnerlessに共同支持し、その二つの5×5 Realityが同じfieldを通って別々の20×20全体画像へ成長しました。</div><div><strong>本線へ返す候補圧力:</strong> 新しい視覚的圧力は露出しませんでした。</div><div class="runtime"><strong>実行情報:</strong> {&quot;branch_wave_read_counts&quot;: [[9, 25, 49, 81, 121, 169, 225, 256, 256], [9, 25, 49, 81, 121, 169, 225, 256, 256]], &quot;complete_seed_was_lived&quot;: false, &quot;global_reality_family_size&quot;: 2, &quot;green_blue_partial_family_size&quot;: 3, &quot;joint_bootstrap_family_size&quot;: 2, &quot;red_partial_family_size&quot;: 3, &quot;source_ia&quot;: &quot;IA1336&quot;}</div></div>
+</article>
+
+
+<article class="card">
+  <div class="cardhead"><div><div class="status pass">成功</div><h2>VP014 — 未経験の混成種から育つ自然画像</h2><div class="tags"><span class="tag">実RGB</span><span class="tag">部分関係の共同形成</span><span class="tag">未経験の完成種</span><span class="tag">豊かさ成長</span><span class="tag">返却Reality</span></div></div></div>
+  <div class="hero"><img src="assets/vp014/actual.png" alt="未経験の混成種から育つ自然画像"></div>
+  <div class="grid">
+    <div class="figure"><h3>入力</h3><img src="assets/vp014/input.png"></div>
+    <div class="figure"><h3>期待結果</h3><img src="assets/vp014/expected.png"></div>
+    <div class="figure"><h3>実出力</h3><img src="assets/vp014/actual.png"></div>
+    <div class="figure"><h3>差分</h3><img src="assets/vp014/diff.png"></div>
+  </div>
+  <div class="notes"><div><strong>観測:</strong> 完成RGBとして一度も経験していない3×3混成接触を、赤の部分経験と緑青の別部分経験が共同で具体化し、そこから返却Realityの連鎖だけで20×20自然画像領域まで成長しました。</div><div><strong>本線へ返す候補圧力:</strong> 新しい視覚的圧力は露出しませんでした。</div><div class="runtime"><strong>実行情報:</strong> {&quot;changed_rgb_occurrences&quot;: 400, &quot;complete_seed_was_lived&quot;: false, &quot;initial_relation_hits&quot;: [&quot;red&quot;, &quot;green-blue&quot;], &quot;red_partial_withdrawal_blocks_full_growth&quot;: true, &quot;source_ia&quot;: &quot;IA1335&quot;, &quot;wave_read_counts&quot;: [1, 9, 25, 49, 81, 121, 169, 225, 256, 256]}</div></div>
+</article>
+
+
+<article class="card">
+  <div class="cardhead"><div><div class="status pass">成功</div><h2>VP013 — 二つの小接触から育つ自然画像</h2><div class="tags"><span class="tag">実RGB</span><span class="tag">豊かさ成長</span><span class="tag">返却Reality</span><span class="tag">二つの種</span></div></div></div>
+  <div class="hero"><img src="assets/vp013/actual.png" alt="二つの小接触から育つ自然画像"></div>
+  <div class="grid">
+    <div class="figure"><h3>入力</h3><img src="assets/vp013/input.png"></div>
+    <div class="figure"><h3>期待結果</h3><img src="assets/vp013/expected.png"></div>
+    <div class="figure"><h3>実出力</h3><img src="assets/vp013/actual.png"></div>
+    <div class="figure"><h3>差分</h3><img src="assets/vp013/diff.png"></div>
+  </div>
+  <div class="notes"><div><strong>観測:</strong> 無関係な64×64実画像Currentに置いた二つの3×3接触だけから、返ったRealityが次の接触を次々に生み、二つの20×20自然画像領域まで自律的に広がりました。</div><div><strong>本線へ返す候補圧力:</strong> 新しい視覚的圧力は露出しませんでした。</div><div class="runtime"><strong>実行情報:</strong> {&quot;changed_rgb_occurrences&quot;: 782, &quot;initial_grounded_contacts&quot;: 2, &quot;same_field_single_seed_control&quot;: true, &quot;source_ia&quot;: &quot;IA1334&quot;, &quot;wave_read_counts&quot;: [2, 18, 50, 98, 162, 242, 338, 450, 512, 512]}</div></div>
+</article>
+
+
+<article class="card">
+  <div class="cardhead"><div><div class="status pass">成功</div><h2>VP012 — 同値でも異なる同一性</h2><div class="tags"><span class="tag">同一性の複数性</span><span class="tag">共有同一性</span><span class="tag">座標非依存</span></div></div></div>
+  <div class="hero"><img src="assets/vp012/actual.png" alt="同値でも異なる同一性"></div>
+  <div class="grid">
+    <div class="figure"><h3>入力</h3><img src="assets/vp012/input.png"></div>
+    <div class="figure"><h3>期待結果</h3><img src="assets/vp012/expected.png"></div>
+    <div class="figure"><h3>実出力</h3><img src="assets/vp012/actual.png"></div>
+    <div class="figure"><h3>差分</h3><img src="assets/vp012/diff.png"></div>
+  </div>
+  <div class="notes"><div><strong>観測:</strong> 見える値が同じ130・130でも、別々の共有出来事が二つ存在する場合だけ局所結果が形成されました。相手が同じか別かは結果を左右しません。</div><div><strong>本線へ返す候補圧力:</strong> 新しい視覚的圧力は露出しませんでした。</div><div class="runtime"><strong>実行情報:</strong> {&quot;one_shared_plus_private_231&quot;: false, &quot;same_remote_231&quot;: true, &quot;source_ia&quot;: &quot;IA1175-IA1176&quot;, &quot;split_remote_231&quot;: true}</div></div>
+</article>
+
+
+<article class="card">
+  <div class="cardhead"><div><div class="status pass">成功</div><h2>VP011 — 再参加による第二形成</h2><div class="tags"><span class="tag">第二形成</span><span class="tag">再参加</span><span class="tag">共有同一性</span><span class="tag">座標非依存</span></div></div></div>
+  <div class="hero"><img src="assets/vp011/actual.png" alt="再参加による第二形成"></div>
+  <div class="grid">
+    <div class="figure"><h3>入力</h3><img src="assets/vp011/input.png"></div>
+    <div class="figure"><h3>期待結果</h3><img src="assets/vp011/expected.png"></div>
+    <div class="figure"><h3>実出力</h3><img src="assets/vp011/actual.png"></div>
+    <div class="figure"><h3>差分</h3><img src="assets/vp011/diff.png"></div>
+  </div>
+  <div class="notes"><div><strong>観測:</strong> 中央で形成された結果は由来だけでは左右を変えませんが、後から左右へ実際に共有させると、そこから第二の共有結果が形成されました。</div><div><strong>本線へ返す候補圧力:</strong> 新しい視覚的圧力は露出しませんでした。</div><div class="runtime"><strong>実行情報:</strong> {&quot;after_new_sharing_240&quot;: true, &quot;before_new_sharing_240&quot;: false, &quot;source_ia&quot;: &quot;IA1173-IA1174&quot;}</div></div>
+</article>
+
+
+<article class="card">
+  <div class="cardhead"><div><div class="status pass">成功</div><h2>VP010 — 戻った結果の局所性</h2><div class="tags"><span class="tag">戻り結果の局所性</span><span class="tag">再参加</span><span class="tag">局所性</span><span class="tag">座標非依存</span></div></div></div>
+  <div class="hero"><img src="assets/vp010/actual.png" alt="戻った結果の局所性"></div>
+  <div class="grid">
+    <div class="figure"><h3>入力</h3><img src="assets/vp010/input.png"></div>
+    <div class="figure"><h3>期待結果</h3><img src="assets/vp010/expected.png"></div>
+    <div class="figure"><h3>実出力</h3><img src="assets/vp010/actual.png"></div>
+    <div class="figure"><h3>差分</h3><img src="assets/vp010/diff.png"></div>
+  </div>
+  <div class="notes"><div><strong>観測:</strong> 交点から形成された結果を保存・再読込しても、その結果は中央にだけ残り、左右へ勝手に伝播しませんでした。</div><div><strong>本線へ返す候補圧力:</strong> 新しい視覚的圧力は露出しませんでした。</div><div class="runtime"><strong>実行情報:</strong> {&quot;a_reads_230&quot;: false, &quot;b_reads_230&quot;: true, &quot;c_reads_230&quot;: false, &quot;returned_230_node&quot;: 27430, &quot;source_ia&quot;: &quot;IA1172&quot;}</div></div>
+</article>
+
+
+<article class="card">
+  <div class="cardhead"><div><div class="status pass">成功</div><h2>VP009 — 関係の交点</h2><div class="tags"><span class="tag">複数関係参加</span><span class="tag">共有同一性</span><span class="tag">視覚比喩</span><span class="tag">座標非依存</span></div></div></div>
+  <div class="hero"><img src="assets/vp009/actual.png" alt="関係の交点"></div>
+  <div class="grid">
+    <div class="figure"><h3>入力</h3><img src="assets/vp009/input.png"></div>
+    <div class="figure"><h3>期待結果</h3><img src="assets/vp009/expected.png"></div>
+    <div class="figure"><h3>実出力</h3><img src="assets/vp009/actual.png"></div>
+    <div class="figure"><h3>差分</h3><img src="assets/vp009/diff.png"></div>
+  </div>
+  <div class="notes"><div><strong>観測:</strong> 中央が左との共有と右との別の共有へ同時参加した側だけで、中央に新しい局所結果が形成されました。腕―手―剣の関係交点に相当する最小視覚例です。</div><div><strong>本線へ返す候補圧力:</strong> 新しい視覚的圧力は露出しませんでした。</div><div class="runtime"><strong>実行情報:</strong> {&quot;joint_shared_formed_230&quot;: true, &quot;private_copies_formed_230&quot;: false, &quot;source_ia&quot;: &quot;IA1171&quot;, &quot;visual_analogy&quot;: &quot;arm-hand-sword relation intersection&quot;}</div></div>
+</article>
+
+
+<article class="card">
+  <div class="cardhead"><div><div class="status pass">成功</div><h2>VP008 — 直接共有ゲート</h2><div class="tags"><span class="tag">共有同一性</span><span class="tag">座標非依存</span><span class="tag">局所性</span></div></div></div>
+  <div class="hero"><img src="assets/vp008/actual.png" alt="直接共有ゲート"></div>
+  <div class="grid">
+    <div class="figure"><h3>入力</h3><img src="assets/vp008/input.png"></div>
+    <div class="figure"><h3>期待結果</h3><img src="assets/vp008/expected.png"></div>
+    <div class="figure"><h3>実出力</h3><img src="assets/vp008/actual.png"></div>
+    <div class="figure"><h3>差分</h3><img src="assets/vp008/diff.png"></div>
+  </div>
+  <div class="notes"><div><strong>観測:</strong> 甲―乙、乙―丙という間接経路だけでは甲―丙の結果は形成されず、甲と丙が同じ一つの出来事を直接共有した側だけに新しい共有結果が形成されました。</div><div><strong>本線へ返す候補圧力:</strong> 新しい視覚的圧力は露出しませんでした。</div><div class="runtime"><strong>実行情報:</strong> {&quot;direct_shared_130_formed_222&quot;: true, &quot;distinct_equal_130_formed_222&quot;: false, &quot;source_ia&quot;: &quot;IA1167-IA1169&quot;}</div></div>
+</article>
+
+
+<article class="card">
+  <div class="cardhead"><div><div class="status pass">成功</div><h2>VP007 — 接触樹</h2><div class="tags"><span class="tag">樹木</span><span class="tag">有機的配置</span><span class="tag">枝分かれ</span><span class="tag">生成チェーン</span><span class="tag">複数同時</span><span class="tag">回転</span><span class="tag">縮尺</span><span class="tag">再参加</span><span class="tag">10px描画</span></div></div></div>
+  <div class="hero"><img src="assets/vp007/actual.png" alt="接触樹"></div>
+  <div class="grid">
+    <div class="figure"><h3>入力</h3><img src="assets/vp007/input.png"></div>
+    <div class="figure"><h3>期待結果</h3><img src="assets/vp007/expected.png"></div>
+    <div class="figure"><h3>実出力</h3><img src="assets/vp007/actual.png"></div>
+    <div class="figure"><h3>差分</h3><img src="assets/vp007/diff.png"></div>
+  </div>
+  <div class="notes"><div><strong>観測:</strong> 太い幹、左右へ広がる主枝、細枝、密な樹冠を模した37個の局所的な二段生成チェーンが、一つの非対称な樹木シルエットとして同時に成立しました。描画セルはVP006の半分の10pxです。</div><div><strong>本線へ返す候補圧力:</strong> 新しい視覚的圧力は露出しませんでした。</div><div class="runtime"><strong>実行情報:</strong> {&quot;global_combination_checks&quot;: 0, &quot;initial_formed&quot;: 37, &quot;recurrent_new_materializations&quot;: 37, &quot;score_used&quot;: false, &quot;sectors&quot;: 37, &quot;winner_used&quot;: false}</div></div>
+</article>
+
+
+<article class="card">
+  <div class="cardhead"><div><div class="status pass">成功</div><h2>VP006 — 接触大聖堂</h2><div class="tags"><span class="tag">大聖堂</span><span class="tag">建築構造</span><span class="tag">生成チェーン</span><span class="tag">複数同時</span><span class="tag">回転</span><span class="tag">縮尺</span><span class="tag">接触帯</span><span class="tag">再参加</span><span class="tag">5倍描画</span></div></div></div>
+  <div class="hero"><img src="assets/vp006/actual.png" alt="接触大聖堂"></div>
+  <div class="grid">
+    <div class="figure"><h3>入力</h3><img src="assets/vp006/input.png"></div>
+    <div class="figure"><h3>期待結果</h3><img src="assets/vp006/expected.png"></div>
+    <div class="figure"><h3>実出力</h3><img src="assets/vp006/actual.png"></div>
+    <div class="figure"><h3>差分</h3><img src="assets/vp006/diff.png"></div>
+  </div>
+  <div class="notes"><div><strong>観測:</strong> 24個の独立した二段生成チェーンが、大聖堂の尖塔・身廊・翼廊を思わせる巨大な対称構造として同時に成立しました。VP005より画素ブロックを5倍大きく描画しています。</div><div><strong>本線へ返す候補圧力:</strong> 新しい視覚的圧力は露出しませんでした。</div><div class="runtime"><strong>実行情報:</strong> {&quot;global_combination_checks&quot;: 0, &quot;initial_formed&quot;: 24, &quot;initial_strip_only&quot;: true, &quot;recurrent_new_materializations&quot;: 24, &quot;recurrent_strip_only&quot;: true, &quot;score_used&quot;: false, &quot;sectors&quot;: 24, &quot;winner_used&quot;: false}</div></div>
+</article>
+
+
+<article class="card">
+  <div class="cardhead"><div><div class="status pass">成功</div><h2>VP005 — ネオン接触曼荼羅</h2><div class="tags"><span class="tag">曼荼羅</span><span class="tag">生成チェーン</span><span class="tag">複数同時</span><span class="tag">回転</span><span class="tag">縮尺</span><span class="tag">接触帯</span><span class="tag">再参加</span></div></div></div>
+  <div class="hero"><img src="assets/vp005/actual.png" alt="ネオン接触曼荼羅"></div>
+  <div class="grid">
+    <div class="figure"><h3>入力</h3><img src="assets/vp005/input.png"></div>
+    <div class="figure"><h3>期待結果</h3><img src="assets/vp005/expected.png"></div>
+    <div class="figure"><h3>実出力</h3><img src="assets/vp005/actual.png"></div>
+    <div class="figure"><h3>差分</h3><img src="assets/vp005/diff.png"></div>
+  </div>
+  <div class="notes"><div><strong>観測:</strong> 16個の局所的な二段生成チェーンが、複数の回転・縮尺を保ったまま対称的な曼荼羅として同時形成されました。</div><div><strong>本線へ返す候補圧力:</strong> 新しい視覚的圧力は露出しませんでした。</div><div class="runtime"><strong>実行情報:</strong> {&quot;global_combination_checks&quot;: 0, &quot;initial_formed&quot;: 16, &quot;initial_strip_only&quot;: true, &quot;recurrent_new_materializations&quot;: 16, &quot;recurrent_strip_only&quot;: true, &quot;score_used&quot;: false, &quot;sectors&quot;: 16, &quot;winner_used&quot;: false}</div></div>
+</article>
+
+
+<article class="card">
+  <div class="cardhead"><div><div class="status pass">成功</div><h2>VP001 — 四つの接触花</h2><div class="tags"><span class="tag">接触</span><span class="tag">複数同時</span><span class="tag">変換</span><span class="tag">縮尺</span><span class="tag">値変更</span><span class="tag">末端形状</span></div></div></div>
+  <div class="hero"><img src="assets/vp001/actual.png" alt="四つの接触花"></div>
+  <div class="grid">
+    <div class="figure"><h3>入力</h3><img src="assets/vp001/input.png"></div>
+    <div class="figure"><h3>期待結果</h3><img src="assets/vp001/expected.png"></div>
+    <div class="figure"><h3>実出力</h3><img src="assets/vp001/actual.png"></div>
+    <div class="figure"><h3>差分</h3><img src="assets/vp001/diff.png"></div>
+  </div>
+  <div class="notes"><div><strong>観測:</strong> 回転・縮尺・値・末端形状が異なる4つの局所構造が、それぞれ独立して正しい子構造を形成しました。</div><div><strong>本線へ返す候補圧力:</strong> 新しい視覚的圧力は露出しませんでした。</div><div class="runtime"><strong>実行情報:</strong> {&quot;correspondence_ambiguities&quot;: 0, &quot;global_combination_checks&quot;: 0, &quot;global_current_whole_scans&quot;: 0, &quot;global_relation_scan_checks&quot;: 0, &quot;new_current_materializations&quot;: 4, &quot;provider_contact_incidence_reads&quot;: 8, &quot;score_used&quot;: false, &quot;winner_used&quot;: false}</div></div>
+</article>
+
+
+<article class="card">
+  <div class="cardhead"><div><div class="status pass">成功</div><h2>VP002 — スケール動物園</h2><div class="tags"><span class="tag">縮尺</span><span class="tag">複数同時</span><span class="tag">回転</span><span class="tag">接触帯</span><span class="tag">多様配置</span></div></div></div>
+  <div class="hero"><img src="assets/vp002/actual.png" alt="スケール動物園"></div>
+  <div class="grid">
+    <div class="figure"><h3>入力</h3><img src="assets/vp002/input.png"></div>
+    <div class="figure"><h3>期待結果</h3><img src="assets/vp002/expected.png"></div>
+    <div class="figure"><h3>実出力</h3><img src="assets/vp002/actual.png"></div>
+    <div class="figure"><h3>差分</h3><img src="assets/vp002/diff.png"></div>
+  </div>
+  <div class="notes"><div><strong>観測:</strong> 1倍から8倍までの8個の構造が同時に成立し、単一スケールの勝者を選ばず共存しました。</div><div><strong>本線へ返す候補圧力:</strong> 新しい視覚的圧力は露出しませんでした。</div><div class="runtime"><strong>実行情報:</strong> {&quot;correspondence_ambiguities&quot;: 0, &quot;global_combination_checks&quot;: 0, &quot;new_current_materializations&quot;: 8, &quot;provider_boundary_strip_only_used&quot;: true, &quot;score_used&quot;: false, &quot;winner_used&quot;: false}</div></div>
+</article>
+
+
+<article class="card">
+  <div class="cardhead"><div><div class="status pass">成功</div><h2>VP003 — 四方向チェーン都市</h2><div class="tags"><span class="tag">生成チェーン</span><span class="tag">四方向</span><span class="tag">回転</span><span class="tag">接触帯</span><span class="tag">再参加</span></div></div></div>
+  <div class="hero"><img src="assets/vp003/actual.png" alt="四方向チェーン都市"></div>
+  <div class="grid">
+    <div class="figure"><h3>入力</h3><img src="assets/vp003/input.png"></div>
+    <div class="figure"><h3>期待結果</h3><img src="assets/vp003/expected.png"></div>
+    <div class="figure"><h3>実出力</h3><img src="assets/vp003/actual.png"></div>
+    <div class="figure"><h3>差分</h3><img src="assets/vp003/diff.png"></div>
+  </div>
+  <div class="notes"><div><strong>観測:</strong> 上下左右の4地区すべてで、初回生成からCurrentへの再参加、さらに次段生成まで連鎖しました。</div><div><strong>本線へ返す候補圧力:</strong> 新しい視覚的圧力は露出しませんでした。</div><div class="runtime"><strong>実行情報:</strong> {&quot;global_combination_checks&quot;: 0, &quot;initial_formed&quot;: 4, &quot;initial_strip_only&quot;: true, &quot;recurrent_new_materializations&quot;: 4, &quot;recurrent_strip_only&quot;: true, &quot;score_used&quot;: false, &quot;winner_used&quot;: false}</div></div>
+</article>
+
+
+<article class="card">
+  <div class="cardhead"><div><div class="status pass">成功</div><h2>VP004 — 壊れた接触庭園</h2><div class="tags"><span class="tag">局所性</span><span class="tag">破壊対照</span><span class="tag">接触</span><span class="tag">複数同時</span><span class="tag">庭園</span></div></div></div>
+  <div class="hero"><img src="assets/vp004/actual.png" alt="壊れた接触庭園"></div>
+  <div class="grid">
+    <div class="figure"><h3>入力</h3><img src="assets/vp004/input.png"></div>
+    <div class="figure"><h3>期待結果</h3><img src="assets/vp004/expected.png"></div>
+    <div class="figure"><h3>実出力</h3><img src="assets/vp004/actual.png"></div>
+    <div class="figure"><h3>差分</h3><img src="assets/vp004/diff.png"></div>
+  </div>
+  <div class="notes"><div><strong>観測:</strong> 12個中11個だけが咲き、意図的に接触を壊した1個だけが生成されませんでした。周囲への波及もありません。</div><div><strong>本線へ返す候補圧力:</strong> 新しい視覚的圧力は露出しませんでした。</div><div class="runtime"><strong>実行情報:</strong> {&quot;broken_index&quot;: 7, &quot;broken_stayed_dark&quot;: true, &quot;correspondence_ambiguities&quot;: 0, &quot;expected_live_blooms&quot;: 11, &quot;global_combination_checks&quot;: 0, &quot;new_current_materializations&quot;: 11, &quot;score_used&quot;: false, &quot;winner_used&quot;: false}</div></div>
+</article>
+</section></main></body></html>

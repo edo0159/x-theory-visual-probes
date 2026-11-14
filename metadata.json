@@ -1,0 +1,1315 @@
+[
+  {
+    "candidate_pressure": false,
+    "observation": "IA2319 receives only a short linear row of ordinary surface words. Immediate adjacency is the only request-side relation: no semantic context edges, clauses, phrase spans, word families, stored senses, or syntax tree are supplied. Across three rotated holdout splits, that plain surface forms all nine unseen rich-pose images exactly.",
+    "panel_labels": [
+      "\u4e5d\u3064\u306e\u672a\u7d4c\u9a13\u8981\u6c42\uff08\u914d\u7f6e\u306e\u307f\uff09",
+      "\u7d4c\u9a13\u304b\u3089\u6210\u7acb\u3059\u3079\u304d\u4e5d\u753b\u50cf",
+      "\u305f\u3060\u306e\u8a9e\u306e\u4e26\u3073\u3068\u96a3\u63a5\u3067\u5b9f\u5f62\u6210",
+      "\u671f\u5f85\u3068\u306e\u5dee\uff08\u30bc\u30ed\u306a\u3089\u9ed2\uff09"
+    ],
+    "probe": "VP028",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "causal_clause_object_count": 0,
+      "exact_scene_count": 9,
+      "heldout_scene_count": 9,
+      "neutral_separator_breaks_only_pose_context": true,
+      "neutral_separator_breaks_only_rich_context": true,
+      "opaque_whole_domain_spelling_changes_output": false,
+      "parser_used": false,
+      "planner_used": false,
+      "request_boundary": "plain-linear-surface",
+      "request_grid_is_presentation_only": true,
+      "same_ambiguous_word_context_count": 2,
+      "score_used": false,
+      "selector_used": false,
+      "semantic_context_edge_count": 0,
+      "sense_registry_used": false,
+      "source_ia": "IA2319",
+      "syntax_tree_used": false,
+      "whole_surface_reversal_changes_output": false
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "6d64b2d397d709e7572ff3e3bb8b9481088c951a",
+      "ia": "IA2319",
+      "subject": "IA2319: ground context in linear surface adjacency"
+    },
+    "tags": [
+      "heldout-generation",
+      "untyped-words",
+      "word-incidence",
+      "contextual-word",
+      "polysemy",
+      "scaffold-retirement",
+      "destructive-control"
+    ],
+    "title": "Nine Held-Out Images from Plain Linear Word Surfaces"
+  },
+  {
+    "candidate_pressure": true,
+    "observation": "Five real microscopy frames are treated as one actual temporal evidence stream. Repeated exact relations from the first three transitions are stress-tested on the held-out fourth transition. The map distinguishes preserved exact recurrence, deeper-context rescue, contradicted recurrence, coarse-projection agreement and OPEN pixels. No predictor or interpolation fills unresolved regions.",
+    "panel_labels": [
+      "held-out Current frame",
+      "actual next Reality",
+      "exact-relation stress map",
+      "status map on black baseline"
+    ],
+    "probe": "VP027",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "appearance_matcher_used": false,
+      "crop_side": 128,
+      "heldout_actual_used_for_relation_formation": false,
+      "heldout_transitions": 1,
+      "interpolation_used": false,
+      "legend": {
+        "black": "OPEN / insufficient exact evidence",
+        "cyan": "position-free repeatedly grounded projection preserved",
+        "green": "same-position repeated exact relation preserved",
+        "magenta": "position-free repeatedly grounded projection contradicted",
+        "red": "same-position repeated exact relation contradicted",
+        "yellow": "deeper temporal Current rescues shallower contradiction"
+      },
+      "neural_prior_used": false,
+      "optical_flow_used": false,
+      "semantic_image_feature_used": false,
+      "source_commit": "2cdc5ce89b334d28f06a58c9f0ca21aa6992a5ba",
+      "source_files": [
+        "Afik_20130217_img_4900.png",
+        "Afik_20130217_img_4935.png",
+        "Afik_20130217_img_4970.png",
+        "Afik_20130217_img_5005.png",
+        "Afik_20130217_img_5040.png"
+      ],
+      "source_height": 728,
+      "source_kind": "real_cc0_time_series",
+      "source_sha256": [
+        "33bbecd2f1e80bba0355d1880c5670a272b3912b6fe194e583f02938668b67ca",
+        "b201cdc90e28a0702ae10791aeffbeb9f59813b84f3609d01eaa2d1b7e489790",
+        "a2b6070475f528d5f76c7aa5751f353e3214638987aef64a6b250081c25b80e6",
+        "2bda1d09445f239e9ecdfe9aa7b25ba41863ac18c270c43882283babc611a5e2",
+        "b244d69d2be095fa511326878787d41f1c0b4e7aede14c1f64f1d097ca091925"
+      ],
+      "source_width": 968,
+      "status_counts": {
+        "attempted": 81,
+        "candidate_coverage": 0.00494384765625,
+        "candidate_exactness": 0.13580246913580246,
+        "contradicted": 70,
+        "correct": 11,
+        "open": 16131,
+        "open_local_collision": 172,
+        "open_total": 16303,
+        "position_candidate": 81,
+        "position_contradicted": 70,
+        "position_preserved": 11,
+        "projection_contradicted": 0,
+        "projection_preserved": 0,
+        "temporal_context_rescue": 0,
+        "total": 16384
+      },
+      "training_transitions": 3
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "6d64b2d397d709e7572ff3e3bb8b9481088c951a",
+      "ia": "IA2319",
+      "subject": "IA2319: ground context in linear surface adjacency"
+    },
+    "tags": [
+      "real-temporal",
+      "external-boundary",
+      "open-world",
+      "entitlement",
+      "destructive-control"
+    ],
+    "title": "Real Time-Series Exact-Relation Stress Map"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "Left and right higher Current-organization families share physical C/D incidence. All valid left organizations ground X and all valid right organizations ground compatible Y, so both co-express into one novel Whole without a global organization winner.",
+    "panel_labels": [
+      "\u5de6\u306e\u4e0a\u4f4d\u7d44\u7e54\u7fa4\u2192X",
+      "\u53f3\u306e\u4e0a\u4f4d\u7d44\u7e54\u7fa4\u2192Y",
+      "\u5171\u6709C/D\u3092\u4ecb\u3057\u305fX+Y Whole",
+      "\u91cd\u306a\u308b\u7d44\u7e54\u304c\u5171\u540c\u5f62\u6210\u3057\u305f\u9818\u57df"
+    ],
+    "probe": "VP026",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "compatible_differences_apply_together": true,
+      "global_organization_winner_used": false,
+      "left_higher_organization_count": 4,
+      "novel_combined_whole_was_lived_before": false,
+      "right_higher_organization_count": 4,
+      "same_address_conflict_control": "OPEN",
+      "score_used": false,
+      "selector_used": false,
+      "shared_band_is_presentation_only": true,
+      "shared_physical_context_addresses": 2,
+      "source_ia": "IA1425"
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "6d64b2d397d709e7572ff3e3bb8b9481088c951a",
+      "ia": "IA2319",
+      "subject": "IA2319: ground context in linear surface adjacency"
+    },
+    "tags": [
+      "higher-organization",
+      "overlapping-organization",
+      "synergistic-whole",
+      "winnerless",
+      "visual-analogy"
+    ],
+    "title": "Overlapping Higher Organizations Co-Form One Novel Whole"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "Old A+Z experience does not overwrite genuinely new B+W Reality because A is non-local to Current B. Once B+W actually obtains it becomes ordinary experience, and a later B+Y perturbation can reform W from that new experience.",
+    "panel_labels": [
+      "\u53e4\u3044A+Z\u7d4c\u9a13",
+      "\u65b0\u3057\u304f\u6210\u7acb\u3057\u305fB+W",
+      "\u5f8c\u306eB+Y\u304b\u3089W\u3092\u518d\u5f62\u6210",
+      "\u65b0\u7d4c\u9a13\u306a\u3057\u306a\u3089Y\u306e\u307e\u307e\u306e\u9818\u57df"
+    ],
+    "probe": "VP025",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "B_W_becomes_experience": true,
+      "counterfactual_without_new_experience_stops_at_Y": true,
+      "display_context_stripe_is_presentation_only": true,
+      "environment_priority_used": false,
+      "history_selector_used": false,
+      "later_same_B_context_reforms_W": true,
+      "novelty_classifier_used": false,
+      "old_A_Z_erases_new_W": false,
+      "source_ia": "IA1417"
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "6d64b2d397d709e7572ff3e3bb8b9481088c951a",
+      "ia": "IA2319",
+      "subject": "IA2319: ground context in linear surface adjacency"
+    },
+    "tags": [
+      "environment-novelty",
+      "self-enrichment",
+      "context-local",
+      "returned-reality",
+      "visual-analogy"
+    ],
+    "title": "New Reality Survives Old Memory and Becomes Experience"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "Two independent lived occurrences expose compatible finite differences at once. Neither occurrence contains the other's difference, yet both co-express and form one novel Whole that existed in neither history.",
+    "panel_labels": [
+      "\u7d4c\u9a13A\u304c\u6839\u62e0\u3065\u3051\u308b\u5de6\u5dee",
+      "\u7d4c\u9a13B\u304c\u6839\u62e0\u3065\u3051\u308b\u53f3\u5dee",
+      "\u3069\u3061\u3089\u306b\u3082\u7121\u304b\u3063\u305fA+B Whole",
+      "\u5171\u540c\u53c2\u52a0\u3067\u65b0\u3057\u304f\u6210\u7acb\u3057\u305f\u5168\u4f53"
+    ],
+    "probe": "VP024",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "blend_used": false,
+      "compatible_differences": 2,
+      "contributing_occurrences": 2,
+      "display_expansion_is_presentation_only": true,
+      "history_winner_used": false,
+      "novel_complete_whole_was_lived_before": false,
+      "selector_used": false,
+      "source_ia": "IA1412"
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "6d64b2d397d709e7572ff3e3bb8b9481088c951a",
+      "ia": "IA2319",
+      "subject": "IA2319: ground context in linear surface adjacency"
+    },
+    "tags": [
+      "compositional-richness",
+      "unlived-whole",
+      "winnerless",
+      "posthoc-reading",
+      "visual-analogy"
+    ],
+    "title": "Two Separate Experiences Form One Unlived Whole"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "The running Reality contains only opaque physical addresses. Numeric-address order is not an image. After Reality has already obtained, the bounded image consumer applies the raster map and recovers the same final RGB image.",
+    "panel_labels": [
+      "\u521d\u671f\u306e\u4e8b\u5f8c\u753b\u50cf\u8aad\u89e3",
+      "\u4e0d\u900f\u660e\u30a2\u30c9\u30ec\u30b9\u3092\u6570\u5024\u9806\u306b\u4e26\u3079\u305f\u8868\u793a",
+      "Reality\u6210\u7acb\u5f8c\u306e\u753b\u50cf\u8aad\u89e3",
+      "\u5ea7\u6a19\u8aad\u89e3\u304c\u4f5c\u308b\u898b\u3048\u65b9\u306e\u5dee"
+    ],
+    "probe": "VP023",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "consumer_supplies_projection_posthoc": true,
+      "raw_address_order_is_presentation_only": true,
+      "reality_states": 3,
+      "runtime_contiguous_image_address_range_used": false,
+      "runtime_raster_coordinates_used": false,
+      "runtime_rgb_channel_layout_used": false,
+      "source_ia": "IA1400"
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "6d64b2d397d709e7572ff3e3bb8b9481088c951a",
+      "ia": "IA2319",
+      "subject": "IA2319: ground context in linear surface adjacency"
+    },
+    "tags": [
+      "real-rgb",
+      "posthoc-reading",
+      "opaque-address",
+      "image-free-motion",
+      "returned-reality"
+    ],
+    "title": "Reality Moves First; Image Coordinates Arrive Later"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "One finite human participation forms a complete coarse image. That returned Reality itself makes a second, more detailed complete image current under the same operation, with no second human request or refinement scheduler.",
+    "panel_labels": [
+      "\u4eba\u9593\u53c2\u52a0\u524d\u306eCurrent",
+      "\u6700\u521d\u306b\u8fd4\u3063\u305f\u7c97\u3044Reality",
+      "\u540c\u3058\u904b\u52d5\u304c\u8fd4\u3057\u305f\u8a73\u7d30Reality",
+      "\u8fd4\u5374Reality\u3067\u5897\u3048\u305f\u5177\u4f53\u6027"
+    ],
+    "probe": "VP022",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "coarse_to_fine_scheduler_used": false,
+      "formed_reality_count": 2,
+      "human_contact_injections": 1,
+      "planner_used": false,
+      "same_generic_operation_each_return": true,
+      "second_human_request_used": false,
+      "selector_used": false,
+      "source_ia": "IA1391"
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "6d64b2d397d709e7572ff3e3bb8b9481088c951a",
+      "ia": "IA2319",
+      "subject": "IA2319: ground context in linear surface adjacency"
+    },
+    "tags": [
+      "real-rgb",
+      "self-continuing",
+      "returned-reality",
+      "refinement",
+      "request-free"
+    ],
+    "title": "One Contact Self-Continues from Coarse to Detailed RGB"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "The rich Actuality and complete 64x64 RGB Current are identical. Changing only two ordinary contact bits yields two different complete unlived RGB Realities; an unlived contact yields no invented default.",
+    "panel_labels": [
+      "\u540c\u305864\u00d764 Current",
+      "\u6709\u9650\u53c2\u52a0A\u3067\u6210\u7acb",
+      "\u6709\u9650\u53c2\u52a0B\u3067\u6210\u7acb",
+      "A\u3068B\u3067\u5909\u308f\u308b\u753b\u50cf\u9818\u57df"
+    ],
+    "probe": "VP021",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "complete_image_A": true,
+      "complete_image_B": true,
+      "human_contact_bit_positions": 2,
+      "planner_used": false,
+      "request_object_used": false,
+      "same_actuality": true,
+      "same_rgb_current": true,
+      "scene_graph_used": false,
+      "selector_used": false,
+      "source_ia": "IA1390",
+      "unlived_contact_defaulted": false
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "6d64b2d397d709e7572ff3e3bb8b9481088c951a",
+      "ia": "IA2319",
+      "subject": "IA2319: ground context in linear surface adjacency"
+    },
+    "tags": [
+      "real-rgb",
+      "human-contact",
+      "request-free",
+      "whole-image",
+      "unlived-whole"
+    ],
+    "title": "Tiny Human Contact Changes the Whole Image"
+  },
+  {
+    "candidate_pressure": "Return incompatible global Whole consequences winnerlessly instead of forcing simultaneous writes.",
+    "observation": "After local source ownership has disappeared, the same Current grounds two different complete Whole-level directions at once: expand the newly returned H/J Reality, or maintain already-obtaining C Reality nearby. Their concrete RGB consequences conflict on shared occurrences, exposing the next frontier without assigning a winner.",
+    "panel_labels": [
+      "\u885d\u7a81\u524dCurrent",
+      "\u65e2\u5b58C\u7dad\u6301Whole",
+      "\u65b0\u898fWhole\u6210\u9577",
+      "\u4e21Whole\u65b9\u5411\u306e\u76f8\u9055"
+    ],
+    "probe": "VP020",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "changed_rgb_occurrences_between_directions": 43,
+      "complete_centers": 7,
+      "conflict_rgb_occurrences": 12,
+      "conflicting_centers": 7,
+      "legacy_c_centers": 6,
+      "legacy_maintenance_center_conflicts": true,
+      "source_ia": "IA1349",
+      "target_growth_center_conflicts": true
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "6d64b2d397d709e7572ff3e3bb8b9481088c951a",
+      "ia": "IA2319",
+      "subject": "IA2319: ground context in linear surface adjacency"
+    },
+    "tags": [
+      "real-rgb",
+      "whole-level-conflict",
+      "global-coherence",
+      "returned-reality",
+      "frontier"
+    ],
+    "title": "Novel Whole Growth Meets Legacy Whole Maintenance"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "The same complete-unlived H5 Current supports two incompatible but concrete 7x7 Whole returns. Neither source is chosen first. Returning the E-form makes only the E-side broader relation exact; returning the C-form makes only the C-side broader relation exact.",
+    "panel_labels": [
+      "\u5171\u901aH 5\u00d75 Current",
+      "E\u578b 7\u00d77 Whole",
+      "C\u578b 7\u00d77 Whole",
+      "E\u578b\u2194C\u578b\u306e\u5dee"
+    ],
+    "probe": "VP019",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "C_return_exact_C": true,
+      "C_return_exact_E": false,
+      "E_return_exact_C": false,
+      "E_return_exact_E": true,
+      "both_wholes_unlived": true,
+      "changed_rgb_occurrences_between_wholes": 1,
+      "encounter_source_y": 7,
+      "shared_h5_core": true,
+      "source_ia": "IA1348",
+      "whole_family_size": 2
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "6d64b2d397d709e7572ff3e3bb8b9481088c951a",
+      "ia": "IA2319",
+      "subject": "IA2319: ground context in linear surface adjacency"
+    },
+    "tags": [
+      "real-rgb",
+      "plural",
+      "posthoc-specificity",
+      "unlived-whole",
+      "returned-reality"
+    ],
+    "title": "One H Current Returns Two Whole Realities"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "The encounter-born complete-unlived H 5x5 from VP017 returns as Current. E-derived red relations and F-derived green/blue relations become current from that H itself, repeatedly enlarge it, and form a complete 20x20 H Whole even though no complete H continuation relation or H exemplar exists.",
+    "panel_labels": [
+      "VP017\u3067\u751f\u307e\u308c\u305fH 5\u00d75",
+      "\u6700\u521d\u306eH\u62e1\u5f35\u6ce2",
+      "20\u00d720\u306e\u672a\u7d4c\u9a13H Whole",
+      "\u5c40\u6240H\u304b\u3089\u65b0\u5f62\u6210\u3055\u308c\u305f\u9818\u57df"
+    ],
+    "probe": "VP018",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "all_complete_h_5x5_patches_absent_from_lived_history": true,
+      "changed_rgb_occurrences_from_h5": 375,
+      "complete_h_continuation_relation_exists": false,
+      "complete_h_exemplar_exists": false,
+      "first_wave_reads": {
+        "gb": 1,
+        "red": 9
+      },
+      "green_blue_current_radius": 2,
+      "green_blue_depth_attempts": [
+        [
+          1,
+          1,
+          254
+        ],
+        [
+          2,
+          0,
+          196
+        ]
+      ],
+      "green_blue_only_forms_h": false,
+      "growth_wave_reads": [
+        {
+          "gb": 1,
+          "red": 9
+        },
+        {
+          "gb": 6,
+          "red": 20
+        },
+        {
+          "gb": 15,
+          "red": 35
+        },
+        {
+          "gb": 28,
+          "red": 54
+        },
+        {
+          "gb": 45,
+          "red": 77
+        },
+        {
+          "gb": 66,
+          "red": 104
+        },
+        {
+          "gb": 91,
+          "red": 135
+        },
+        {
+          "gb": 112,
+          "red": 160
+        },
+        {
+          "gb": 126,
+          "red": 176
+        },
+        {
+          "gb": 140,
+          "red": 192
+        },
+        {
+          "gb": 154,
+          "red": 208
+        },
+        {
+          "gb": 168,
+          "red": 224
+        },
+        {
+          "gb": 182,
+          "red": 240
+        },
+        {
+          "gb": 196,
+          "red": 256
+        },
+        {
+          "gb": 196,
+          "red": 256
+        }
+      ],
+      "red_current_radius": 1,
+      "red_depth_attempts": [
+        [
+          1,
+          0,
+          256
+        ]
+      ],
+      "red_only_forms_h": false,
+      "source_ia": "IA1342"
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "6d64b2d397d709e7572ff3e3bb8b9481088c951a",
+      "ia": "IA2319",
+      "subject": "IA2319: ground context in linear surface adjacency"
+    },
+    "tags": [
+      "real-rgb",
+      "unlived-whole",
+      "richness-growth",
+      "joint-partial",
+      "returned-reality"
+    ],
+    "title": "Unlived H Grows into a Wide Rich Whole"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "A full C rich growth and a different full D rich growth meet. Their mixed boundary Current was never lived as one complete patch; C-side red richness and D-side green/blue richness jointly form a third concrete H 5x5 RGB Whole that also never existed as any complete lived patch.",
+    "panel_labels": [
+      "C/D\u306e\u5c0f\u3055\u306a\u8d77\u70b9",
+      "C\u3068D\u304c\u6210\u9577\u3057\u3066\u63a5\u89e6",
+      "\u63a5\u70b9\u306b\u65b0\u3057\u3044H Whole",
+      "H\u3068\u3057\u3066\u65b0\u5f62\u6210\u3055\u308c\u305f\u753b\u7d20"
+    ],
+    "probe": "VP017",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "c_side_withdrawal_removes_h": true,
+      "complete_encounter_condition_was_lived": false,
+      "complete_h_result_was_lived": false,
+      "d_side_relation_survives_control": true,
+      "encounter_source_y": 3,
+      "growth_wave_read_counts": [
+        2,
+        18,
+        50,
+        84,
+        108,
+        120,
+        132,
+        144,
+        156,
+        168,
+        180,
+        192,
+        192
+      ],
+      "new_h_changed_rgb_occurrences": 25,
+      "source_ia": "IA1341"
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "6d64b2d397d709e7572ff3e3bb8b9481088c951a",
+      "ia": "IA2319",
+      "subject": "IA2319: ground context in linear surface adjacency"
+    },
+    "tags": [
+      "real-rgb",
+      "creative-encounter",
+      "joint-partial",
+      "unlived-whole",
+      "returned-reality"
+    ],
+    "title": "Encounter Forms an Unlived Third Rich Whole"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "Two spatially separate plural Current origins admit four local C/D combinations. Independent returned growths meet physically: C/C and D/D become coherent wide Wholes, while mixed C/D and D/C fronts are destroyed by incompatible RGB overlap.",
+    "panel_labels": [
+      "\u4e8c\u3064\u306eplural\u8d77\u70b9",
+      "C/C \u2192 Whole C",
+      "D/D \u2192 Whole D",
+      "Whole C\u2194D\u5dee\u5206"
+    ],
+    "probe": "VP016",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "cc_wave_read_counts": [
+        18,
+        40,
+        55,
+        72,
+        91,
+        112,
+        135,
+        160,
+        176,
+        192,
+        208,
+        224,
+        240,
+        256,
+        256
+      ],
+      "dd_wave_read_counts": [
+        18,
+        40,
+        55,
+        72,
+        91,
+        112,
+        135,
+        160,
+        176,
+        192,
+        208,
+        224,
+        240,
+        256,
+        256
+      ],
+      "initial_local_combinations": 4,
+      "mixed_cd_survives": false,
+      "mixed_dc_survives": false,
+      "source_ia": "IA1337",
+      "source_points": [
+        [
+          3,
+          3
+        ],
+        [
+          9,
+          3
+        ]
+      ],
+      "surviving_global_wholes": 2,
+      "target_points": [
+        [
+          25,
+          25
+        ],
+        [
+          31,
+          25
+        ]
+      ],
+      "tested_pairs_before_witness": 1
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "6d64b2d397d709e7572ff3e3bb8b9481088c951a",
+      "ia": "IA2319",
+      "subject": "IA2319: ground context in linear surface adjacency"
+    },
+    "tags": [
+      "real-rgb",
+      "plural-bootstrap",
+      "interacting-growth",
+      "global-coherence",
+      "returned-reality"
+    ],
+    "title": "Two Plural Growth Origins Meet as One Whole"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "One complete-RGB-unlived 3x3 hybrid Current keeps two jointly supported rich bootstraps winnerlessly alive. Each returned 5x5 member then grows through the same field into a different 20x20 whole-image Reality.",
+    "panel_labels": [
+      "\u521d\u671fCurrent",
+      "\u5168\u4f53Reality C",
+      "\u5168\u4f53Reality D",
+      "C\u2194D\u5dee\u5206"
+    ],
+    "probe": "VP015",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "branch_wave_read_counts": [
+        [
+          9,
+          25,
+          49,
+          81,
+          121,
+          169,
+          225,
+          256,
+          256
+        ],
+        [
+          9,
+          25,
+          49,
+          81,
+          121,
+          169,
+          225,
+          256,
+          256
+        ]
+      ],
+      "complete_seed_was_lived": false,
+      "global_reality_family_size": 2,
+      "green_blue_partial_family_size": 3,
+      "joint_bootstrap_family_size": 2,
+      "red_partial_family_size": 3,
+      "source_ia": "IA1336"
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "6d64b2d397d709e7572ff3e3bb8b9481088c951a",
+      "ia": "IA2319",
+      "subject": "IA2319: ground context in linear surface adjacency"
+    },
+    "tags": [
+      "real-rgb",
+      "joint-partial",
+      "plural-bootstrap",
+      "global-family",
+      "returned-reality"
+    ],
+    "title": "Plural Bootstrap Grows Two Global Realities"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "The only initial 3x3 RGB contact was never lived as a complete patch. Independent red and green/blue histories jointly form the first concrete 5x5 patch, whose returned Reality then grows a full 20x20 natural-image region.",
+    "panel_labels": null,
+    "probe": "VP014",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "changed_rgb_occurrences": 400,
+      "complete_seed_was_lived": false,
+      "initial_relation_hits": [
+        "red",
+        "green-blue"
+      ],
+      "red_partial_withdrawal_blocks_full_growth": true,
+      "source_ia": "IA1335",
+      "wave_read_counts": [
+        1,
+        9,
+        25,
+        49,
+        81,
+        121,
+        169,
+        225,
+        256,
+        256
+      ]
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "6d64b2d397d709e7572ff3e3bb8b9481088c951a",
+      "ia": "IA2319",
+      "subject": "IA2319: ground context in linear surface adjacency"
+    },
+    "tags": [
+      "real-rgb",
+      "joint-partial",
+      "unlived-seed",
+      "richness-growth",
+      "returned-reality"
+    ],
+    "title": "Unlived Hybrid Seed Bootstraps Rich Growth"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "Only two exact 3x3 Current contacts are initially grounded; returned Reality repeatedly creates new neighboring incidence until two separate 20x20 natural-image regions form on one unrelated 64x64 Current.",
+    "panel_labels": null,
+    "probe": "VP013",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "changed_rgb_occurrences": 782,
+      "initial_grounded_contacts": 2,
+      "same_field_single_seed_control": true,
+      "source_ia": "IA1334",
+      "wave_read_counts": [
+        2,
+        18,
+        50,
+        98,
+        162,
+        242,
+        338,
+        450,
+        512,
+        512
+      ]
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "6d64b2d397d709e7572ff3e3bb8b9481088c951a",
+      "ia": "IA2319",
+      "subject": "IA2319: ground context in linear surface adjacency"
+    },
+    "tags": [
+      "real-rgb",
+      "richness-growth",
+      "returned-reality",
+      "two-seed"
+    ],
+    "title": "Two Tiny Contacts Grow Two Rich Regions"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "Two distinct shared identities form the local result even when their values are equal; remote partner identity is not required.",
+    "panel_labels": null,
+    "probe": "VP012",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "one_shared_plus_private_231": false,
+      "same_remote_231": true,
+      "source_ia": "IA1175-IA1176",
+      "split_remote_231": true
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "6d64b2d397d709e7572ff3e3bb8b9481088c951a",
+      "ia": "IA2319",
+      "subject": "IA2319: ground context in linear surface adjacency"
+    },
+    "tags": [
+      "identity-multiplicity",
+      "shared-identity",
+      "coordinate-free"
+    ],
+    "title": "Equal-Value Identity Multiplicity"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "Formation origin alone does not propagate; later physical sharing of returned 230 enables a second shared 240 formation.",
+    "panel_labels": null,
+    "probe": "VP011",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "after_new_sharing_240": true,
+      "before_new_sharing_240": false,
+      "source_ia": "IA1173-IA1174"
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "6d64b2d397d709e7572ff3e3bb8b9481088c951a",
+      "ia": "IA2319",
+      "subject": "IA2319: ground context in linear surface adjacency"
+    },
+    "tags": [
+      "second-formation",
+      "reentry",
+      "shared-identity",
+      "coordinate-free"
+    ],
+    "title": "Returned Sharing Cascade"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "After persistence and Current renewal, returned 230 remains readable only at the center.",
+    "panel_labels": null,
+    "probe": "VP010",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "a_reads_230": false,
+      "b_reads_230": true,
+      "c_reads_230": false,
+      "returned_230_node": 27430,
+      "source_ia": "IA1172"
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "6d64b2d397d709e7572ff3e3bb8b9481088c951a",
+      "ia": "IA2319",
+      "subject": "IA2319: ground context in linear surface adjacency"
+    },
+    "tags": [
+      "returned-locality",
+      "reentry",
+      "locality",
+      "coordinate-free"
+    ],
+    "title": "Returned Locality"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "The center forms a new local result only when it jointly participates in two distinct shared identities.",
+    "panel_labels": null,
+    "probe": "VP009",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "joint_shared_formed_230": true,
+      "private_copies_formed_230": false,
+      "source_ia": "IA1171",
+      "visual_analogy": "arm-hand-sword relation intersection"
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "6d64b2d397d709e7572ff3e3bb8b9481088c951a",
+      "ia": "IA2319",
+      "subject": "IA2319: ground context in linear surface adjacency"
+    },
+    "tags": [
+      "joint-participation",
+      "shared-identity",
+      "visual-analogy",
+      "coordinate-free"
+    ],
+    "title": "Joint Hinge"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "A pairwise A-B/B-C path does not substitute for literal A-C sharing.",
+    "panel_labels": null,
+    "probe": "VP008",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "direct_shared_130_formed_222": true,
+      "distinct_equal_130_formed_222": false,
+      "source_ia": "IA1167-IA1169"
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "6d64b2d397d709e7572ff3e3bb8b9481088c951a",
+      "ia": "IA2319",
+      "subject": "IA2319: ground context in linear surface adjacency"
+    },
+    "tags": [
+      "shared-identity",
+      "coordinate-free",
+      "locality"
+    ],
+    "title": "Direct Shared Identity Gate"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "Thirty-seven local two-stage chains formed one asymmetric tree-like field.",
+    "panel_labels": null,
+    "probe": "VP007",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "global_combination_checks": 0,
+      "initial_formed": 37,
+      "recurrent_new_materializations": 37,
+      "score_used": false,
+      "sectors": 37,
+      "winner_used": false
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "6d64b2d397d709e7572ff3e3bb8b9481088c951a",
+      "ia": "IA2319",
+      "subject": "IA2319: ground context in linear surface adjacency"
+    },
+    "tags": [
+      "tree",
+      "organic",
+      "branching",
+      "generated-chain",
+      "plural",
+      "rotation",
+      "scale",
+      "reentry",
+      "fine-render"
+    ],
+    "title": "Contact Tree"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "Twenty-four local two-stage chains formed one cathedral-like symmetric field.",
+    "panel_labels": null,
+    "probe": "VP006",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "global_combination_checks": 0,
+      "initial_formed": 24,
+      "initial_strip_only": true,
+      "recurrent_new_materializations": 24,
+      "recurrent_strip_only": true,
+      "score_used": false,
+      "sectors": 24,
+      "winner_used": false
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "6d64b2d397d709e7572ff3e3bb8b9481088c951a",
+      "ia": "IA2319",
+      "subject": "IA2319: ground context in linear surface adjacency"
+    },
+    "tags": [
+      "cathedral",
+      "architecture",
+      "generated-chain",
+      "plural",
+      "rotation",
+      "scale",
+      "touching-strip",
+      "reentry",
+      "large-render"
+    ],
+    "title": "Contact Cathedral"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "Sixteen local two-stage chains formed as a symmetric multi-scale contact mandala.",
+    "panel_labels": null,
+    "probe": "VP005",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "global_combination_checks": 0,
+      "initial_formed": 16,
+      "initial_strip_only": true,
+      "recurrent_new_materializations": 16,
+      "recurrent_strip_only": true,
+      "score_used": false,
+      "sectors": 16,
+      "winner_used": false
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "6d64b2d397d709e7572ff3e3bb8b9481088c951a",
+      "ia": "IA2319",
+      "subject": "IA2319: ground context in linear surface adjacency"
+    },
+    "tags": [
+      "mandala",
+      "generated-chain",
+      "plural",
+      "rotation",
+      "scale",
+      "touching-strip",
+      "reentry"
+    ],
+    "title": "Neon Contact Mandala"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "All four contact-local occurrences formed their exact children.",
+    "panel_labels": null,
+    "probe": "VP001",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "correspondence_ambiguities": 0,
+      "global_combination_checks": 0,
+      "global_current_whole_scans": 0,
+      "global_relation_scan_checks": 0,
+      "new_current_materializations": 4,
+      "provider_contact_incidence_reads": 8,
+      "score_used": false,
+      "winner_used": false
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "6d64b2d397d709e7572ff3e3bb8b9481088c951a",
+      "ia": "IA2319",
+      "subject": "IA2319: ground context in linear surface adjacency"
+    },
+    "tags": [
+      "contact",
+      "plural",
+      "transform",
+      "scale",
+      "value",
+      "distal-geometry"
+    ],
+    "title": "Four Contact Blooms"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "Eight independent occurrences at scales 1\u20138 formed together without a scale winner.",
+    "panel_labels": null,
+    "probe": "VP002",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "correspondence_ambiguities": 0,
+      "global_combination_checks": 0,
+      "new_current_materializations": 8,
+      "provider_boundary_strip_only_used": true,
+      "score_used": false,
+      "winner_used": false
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "6d64b2d397d709e7572ff3e3bb8b9481088c951a",
+      "ia": "IA2319",
+      "subject": "IA2319: ground context in linear surface adjacency"
+    },
+    "tags": [
+      "scale",
+      "plural",
+      "rotation",
+      "touching-strip",
+      "zoo"
+    ],
+    "title": "Scale Zoo"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "Four rotated districts each completed an initial generation and a second generated step.",
+    "panel_labels": null,
+    "probe": "VP003",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "global_combination_checks": 0,
+      "initial_formed": 4,
+      "initial_strip_only": true,
+      "recurrent_new_materializations": 4,
+      "recurrent_strip_only": true,
+      "score_used": false,
+      "winner_used": false
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "6d64b2d397d709e7572ff3e3bb8b9481088c951a",
+      "ia": "IA2319",
+      "subject": "IA2319: ground context in linear surface adjacency"
+    },
+    "tags": [
+      "generated-chain",
+      "four-directions",
+      "rotation",
+      "touching-strip",
+      "reentry"
+    ],
+    "title": "Four-Direction Chain City"
+  },
+  {
+    "candidate_pressure": null,
+    "observation": "Eleven blooms formed while the single broken touching strip stayed dark; neighbors were unaffected.",
+    "panel_labels": null,
+    "probe": "VP004",
+    "result": {
+      "missing_children": [],
+      "status": "PASS",
+      "unexpected_part_count": 0
+    },
+    "runtime": {
+      "broken_index": 7,
+      "broken_stayed_dark": true,
+      "correspondence_ambiguities": 0,
+      "expected_live_blooms": 11,
+      "global_combination_checks": 0,
+      "new_current_materializations": 11,
+      "score_used": false,
+      "winner_used": false
+    },
+    "schema": 4,
+    "source": {
+      "branch": "xmind/image-actuality",
+      "commit": "6d64b2d397d709e7572ff3e3bb8b9481088c951a",
+      "ia": "IA2319",
+      "subject": "IA2319: ground context in linear surface adjacency"
+    },
+    "tags": [
+      "locality",
+      "destructive-control",
+      "contact",
+      "plural",
+      "garden"
+    ],
+    "title": "Broken Contact Garden"
+  }
+]
